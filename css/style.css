@@ -32,9 +32,33 @@ body {
 }
 /* ========== machine section ========== */
 .machine {
+  position: relative;
   background: var(--body);
-  padding: 3em 2em;
+  padding: 4em 1.5em 2em;
   border-radius: 0.5em;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  overflow: hidden;
+}
+.machine::before {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 2em;
+  width: 100%;
+  background: var(--display);
+  top: 0;
+  left: 0;
+
+}
+.machine::after {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 1em;
+  width: 100%;
+  background: var(--display);
+  bottom: 0;
+  left: 0;
 }
 
 .machine h1 {
@@ -55,6 +79,7 @@ body {
   border-radius: 0.5em;
   overflow: hidden;
   margin-right: 1em;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 .item {
@@ -69,15 +94,17 @@ body {
   justify-content: center;
   align-items: center;
   border-bottom: 30px solid var(--display-border);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 .item li img {
   position: absolute;
   bottom: 0;
-  width: 4.8em;
+  width: 4.6em;
   background: var(--display-border);
-  padding: 0 0.5em;
-  padding-top: 1.5em;
+  padding: 0 0.7em;
+  padding-top: 2em;
   border-radius: 5em 5em 0 0;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 .item li input {
   position: absolute;
@@ -90,6 +117,13 @@ body {
   border-radius: 0.3em;
   font-size: 0.7em;
   padding: 0.3em 0.7em 0.1em 0.9em;
+  box-shadow: rgba(0, 0, 0, 0.3) 1.95px 1.95px 2.6px;
+}
+
+
+.item li input:active {
+  box-shadow: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 5px 10px -20px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 .item li input:hover {
@@ -103,6 +137,7 @@ body {
   background: var(--display-border);
   padding: 1em;
   border-radius: 0.4em;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 
 .status {
@@ -110,6 +145,7 @@ body {
   font-family: var(--title);
   padding: 1em 0.5em;
   margin-bottom: 1em;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 
 .status p {
@@ -156,6 +192,12 @@ body {
   border: none;
   border-radius: 0.3em;
   cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.3) 1.95px 1.95px 2.6px;
+}
+
+.setting input:active {
+  box-shadow: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 5px 10px -20px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 /* print */
 .print {
@@ -170,4 +212,10 @@ body {
   border-radius: 0.2em;
   background: var(--button);
   cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px -50px 36px -28px inset;
+  
+}
+
+.print:active {
+  box-shadow: rgba(0, 0, 0, 0.5) 0px -50px 36px -18px inset;
 }
