@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, li {
+  list-style: none;
+}
+
+/* ========== print routine popup section ========== */
+.print {}
+.hidden {
+  display: none;
+}
+/* ========== machine section ========== */
+/* ========== display section ========== */
+/* ========== side button section ========== */
+/* print */

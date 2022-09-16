@@ -1,0 +1,98 @@
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Routine MACHINE</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- print routine popup -->
+      <div id="print" class="print hidden">
+        <h1>Today Routine</h1>
+        <h2 class="title">
+          <span>Routine</span>
+          <span>Time</span>
+        </h2>
+        <ul id="routine-list" class="routine-list"></ul>
+        <h3 class="total-time">
+          <span>total</span>
+          <span>00:00</span>
+        </h3>
+        <button class="save">OK</button>
+      </div>
+      <!-- machine -->
+      <div class="machine">
+        <h1 class="logo">Routine MACHINE</h1>
+        <!-- display -->
+        <div class="display">
+          <ul id="item" class="item">
+            <li>
+              <input type="button" value="카페">
+            </li>
+            <li>
+              <input type="button" value="카페">
+            </li>
+            <li>
+              <input type="button" value="카페">
+            </li>
+            <li>
+              <input type="button" value="카페">
+            </li>
+            <li>
+              <input type="button" value="카페">
+            </li>
+            <li>
+              <input type="button" value="카페">
+            </li>
+            <li>
+              <input type="button" value="카페">
+            </li>
+            <li>
+              <input type="button" value="카페">
+            </li>
+            <li>
+              <input type="button" value="카페">
+            </li>
+          </ul>
+        </div>
+        <!-- side button -->
+        <div class="input">
+          <!-- status -->
+          <div class="status">
+            <p>now</p>
+            <h2 id="now"></h2>
+            <p>total</p>
+            <h2 id="total">00:00</h2>
+            <h3 id="show-item">선택하세요</h3>
+            <p id="show-time" class="time">
+              <span class="h">00</span>
+              <span>:</span>
+              <span class="m">00</span>
+            </p>
+          </div>
+          <!-- setting -->
+          <form id="time-set" class="setting">
+            <p>hour</p>
+            <input type="button" value="1" class="hour">
+            <input type="button" value="2" class="hour">
+            <input type="button" value="3" class="hour">
+            <p>minute</p>
+            <input type="button" value="10" class="minute">
+            <input type="button" value="30" class="minute">
+            <input type="button" value="50" class="minute">
+            <p>+</p>
+            <input type="button" value="reset" id="reset">
+            <input type="button" value="add" id="id">
+            <input type="button" value="ok" id="ok">
+          </form>
+        </div>
+        <!-- print -->
+        <button id="print" class="print">PRINT</button>
+      </div>
+    </div>
+  </body>
+</html>
