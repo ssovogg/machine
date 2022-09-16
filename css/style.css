@@ -7,16 +7,167 @@
   box-sizing: border-box;
 }
 
-ul, li {
+ul,
+li {
   list-style: none;
 }
 
+body {
+  background: var(--border);
+}
+
+/* common */
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
 /* ========== print routine popup section ========== */
-.print {}
+.print {
+}
 .hidden {
   display: none;
 }
 /* ========== machine section ========== */
+.machine {
+  background: var(--body);
+  padding: 3em 2em;
+  border-radius: 0.5em;
+}
+
+.machine h1 {
+  font-family: var(--title);
+  color: var(--logo);
+  text-align: center;
+  margin-bottom: 0.8em;
+  font-size: 1.3em;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+}
 /* ========== display section ========== */
+.display {
+  background: var(--display);
+  border-radius: 0.5em;
+  overflow: hidden;
+  margin-right: 1em;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: repeat(3, 6em);
+  grid-template-rows: repeat(3, 9em);
+}
+
+.item li {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 30px solid var(--display-border);
+}
+.item li img {
+  position: absolute;
+  bottom: 0;
+  width: 4.8em;
+  background: var(--display-border);
+  padding: 0 0.5em;
+  padding-top: 1.5em;
+  border-radius: 5em 5em 0 0;
+}
+.item li input {
+  position: absolute;
+  bottom: -24px;
+  font-family: var(--title);
+  color: var(--display-border);
+  letter-spacing: 1.7;
+  background: var(--button);
+  border: none;
+  border-radius: 0.3em;
+  font-size: 0.7em;
+  padding: 0.3em 0.7em 0.1em 0.9em;
+}
+
+.item li input:hover {
+  cursor: pointer;
+}
 /* ========== side button section ========== */
+.input {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: var(--display-border);
+  padding: 1em;
+  border-radius: 0.4em;
+}
+
+.status {
+  background: var(--display);
+  font-family: var(--title);
+  padding: 1em 0.5em;
+  margin-bottom: 1em;
+}
+
+.status p {
+  margin: 0.5em 0;
+  font-size: 0.8em;
+}
+
+.status h2 {
+  font-size: 1.1em;
+}
+.status h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5em 0 0.3em;
+  background: var(--print);
+  color: var(--display-border);
+  width: 7em;
+  height: 1.5em;
+}
+
+.time {
+  color: var(--display-border);
+}
+
+/* setting */
+.setting {
+  font-family: var(--title);
+}
+
+.setting p {
+  font-size: 0.8em;
+  margin-bottom: 0.2em;
+  color: var(--print);
+}
+.setting input {
+  margin-bottom: 1em;
+  width: 3.7em;
+  padding: 0.2em 0;
+  font-family: inherit;
+  font-size: 0.7em;
+  color: var(--display-border);
+  background: var(--button);
+  border: none;
+  border-radius: 0.3em;
+  cursor: pointer;
+}
 /* print */
+.print {
+  margin-top: 2rem;
+  width: 100%;
+  padding: 2.5rem 0;
+  font-family: var(--title);
+  font-size: 2.5em;
+  letter-spacing: 20;
+  color: var(--display-border);
+  border: none;
+  border-radius: 0.2em;
+  background: var(--button);
+  cursor: pointer;
+}

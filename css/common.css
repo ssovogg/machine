@@ -1,0 +1,15 @@
+@import url('https://cdn.jsdelivr.net/npm/galmuri@latest/dist/galmuri.css');
+
+:root {
+  /* font-family */
+  --title: Galmuri11, 'Noto Sans KR', sans-serif;
+
+  /* color */
+  --logo: #ec625b;
+  --button: #ec625b;
+  --body: #fffbf4;
+  --display: #5dcda4;
+  --display-border: #e8f5f9;
+  --print: #12787f;
+  --border: #12787f;
+}

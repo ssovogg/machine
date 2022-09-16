@@ -6,6 +6,7 @@
     <title>Routine MACHINE</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/common.css" />
+    <script src="https://kit.fontawesome.com/fbdf0195b9.js" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
   </head>
   <body>
@@ -27,68 +28,79 @@
       <!-- machine -->
       <div class="machine">
         <h1 class="logo">Routine MACHINE</h1>
-        <!-- display -->
-        <div class="display">
-          <ul id="item" class="item">
-            <li>
-              <input type="button" value="카페">
-            </li>
-            <li>
-              <input type="button" value="카페">
-            </li>
-            <li>
-              <input type="button" value="카페">
-            </li>
-            <li>
-              <input type="button" value="카페">
-            </li>
-            <li>
-              <input type="button" value="카페">
-            </li>
-            <li>
-              <input type="button" value="카페">
-            </li>
-            <li>
-              <input type="button" value="카페">
-            </li>
-            <li>
-              <input type="button" value="카페">
-            </li>
-            <li>
-              <input type="button" value="카페">
-            </li>
-          </ul>
-        </div>
-        <!-- side button -->
-        <div class="input">
-          <!-- status -->
-          <div class="status">
-            <p>now</p>
-            <h2 id="now"></h2>
-            <p>total</p>
-            <h2 id="total">00:00</h2>
-            <h3 id="show-item">선택하세요</h3>
-            <p id="show-time" class="time">
-              <span class="h">00</span>
-              <span>:</span>
-              <span class="m">00</span>
-            </p>
+        <div class="top">
+          <!-- display -->
+          <div class="display">
+            <ul id="item" class="item">
+              <li>
+                <img src="/images/cafe.png" alt="카페">
+                <input type="button" value="카페" />
+              </li>
+              <li>
+                <img src="/images/clock.png" alt="휴식">
+                <input type="button" value="휴식" />
+              </li>
+              <li>
+                <img src="/images/broom.png" alt="청소">
+                <input type="button" value="청소" />
+              </li>
+              <li>
+                <img src="/images/reading-book.png" alt="독서">
+                <input type="button" value="독서" />
+              </li>
+              <li>
+                <img src="/images/knowledge.png" alt="공부">
+                <input type="button" value="공부" />
+              </li>
+              <li>
+                <img src="/images/list.png" alt="글쓰기">
+                <input type="button" value="글쓰기" />
+              </li>
+              <li>
+                <img src="/images/streched.png" alt="스트레칭">
+                <input type="button" value="스트레칭" />
+              </li>
+              <li>
+                <img src="/images/dog-walking.png" alt="산책">
+                <input type="button" value="산책" />
+              </li>
+              <li>
+                <img src="/images/dumbbell.png" alt="운동">
+                <input type="button" value="운동" />
+              </li>
+            </ul>
           </div>
-          <!-- setting -->
-          <form id="time-set" class="setting">
-            <p>hour</p>
-            <input type="button" value="1" class="hour">
-            <input type="button" value="2" class="hour">
-            <input type="button" value="3" class="hour">
-            <p>minute</p>
-            <input type="button" value="10" class="minute">
-            <input type="button" value="30" class="minute">
-            <input type="button" value="50" class="minute">
-            <p>+</p>
-            <input type="button" value="reset" id="reset">
-            <input type="button" value="add" id="id">
-            <input type="button" value="ok" id="ok">
-          </form>
+          <!-- side button -->
+          <div class="input">
+            <!-- status -->
+            <div class="status">
+              <p>now</p>
+              <h2 id="now">00:00:00</h2>
+              <p>total</p>
+              <h2 id="total">00:00</h2>
+              <h3 id="show-item">선택하세요</h3>
+              <h2 id="show-time" class="time">
+                <span class="h">00</span>
+                <span>:</span>
+                <span class="m">00</span>
+              </h2>
+            </div>
+            <!-- setting -->
+            <form id="time-set" class="setting">
+              <p>hour</p>
+              <input type="button" value="1" class="hour" />
+              <input type="button" value="2" class="hour" />
+              <input type="button" value="3" class="hour" />
+              <p>minute</p>
+              <input type="button" value="10" class="minute" />
+              <input type="button" value="30" class="minute" />
+              <input type="button" value="50" class="minute" />
+              <p>+</p>
+              <input type="button" value="reset" id="reset" />
+              <input type="button" value="add" id="id" />
+              <input type="button" value="ok" id="ok" />
+            </form>
+          </div>
         </div>
         <!-- print -->
         <button id="print" class="print">PRINT</button>
