@@ -18,6 +18,7 @@ body {
 
 /* common */
 .wrap {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,11 +26,93 @@ body {
 }
 
 /* ========== print routine popup section ========== */
-.print {
+.print-popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 23em;
+  padding: 3em;
+  border-radius: 0.3em;
+  text-align: center;
+  background: var(--body);
+  font-family: var(--title);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  z-index: 999;
+  font-size: 0.8em;
+  transition: transform 150ms ease-in;
 }
+
 .hidden {
   display: none;
 }
+
+.print-popup h1 {
+  width: 100%;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.5em;
+  border-bottom: 2px dashed black;
+}
+.print-popup h2 {
+  width: 100%;
+  padding-bottom: 0.5em;
+  border-bottom: 2px dashed black;
+}
+
+.routine-list {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2em;
+  letter-spacing: 1.5;
+}
+.routine-list li {
+  display: flex;
+  justify-content: space-between;  
+  padding: 0.5em;
+  border-bottom: 1px dotted grey;
+}
+.routine-list li:last-child {
+  border-bottom: none;
+}
+
+.total-time {
+  color: var(--button);
+  font-size: 2em;
+  width: 100%;
+  padding-top: 0.8em;
+  border-top: 2px dashed black;
+}
+.close {
+  all: unset;
+  position: absolute;
+  top: 0.8em;
+  right: 0.8em;
+  font-size: 1.8em;
+  cursor: pointer;
+  transition: color 100ms ease-in;
+}
+.close:hover {
+  color: var(--button);
+}
+.backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: .5;
+  z-index: 99;
+  transition: opacity 150ms ease-in;
+}
+
+.backdrop-hidden {
+  opacity: 0;
+  z-index: 0;
+}
+
+
 /* ========== machine section ========== */
 .machine {
   position: relative;
@@ -129,6 +212,7 @@ body {
 .item li input:hover {
   cursor: pointer;
 }
+
 /* ========== side button section ========== */
 .input {
   display: flex;
