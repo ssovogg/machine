@@ -182,12 +182,12 @@ body {
 .item li img {
   position: absolute;
   bottom: 0;
-  width: 4.6em;
-  background: var(--display-border);
-  padding: 0 0.7em;
-  padding-top: 2em;
+  width: 4.3em;
+  /* background: var(--display-border); */
+  /* padding: 0 0.7em;
+  padding-top: 2em; */
   border-radius: 5em 5em 0 0;
-  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  /* box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset; */
 }
 .item li input {
   position: absolute;
@@ -225,7 +225,7 @@ body {
 }
 
 .status {
-  background: var(--display);
+  background: var(--status);
   font-family: var(--title);
   padding: 1em 0.5em;
   margin-bottom: 1em;
@@ -252,7 +252,7 @@ body {
 }
 
 .time {
-  color: var(--display-border);
+  color: var(--time);
 }
 
 /* setting */

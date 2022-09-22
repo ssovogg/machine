@@ -5,11 +5,14 @@
   --title: Galmuri11, 'Noto Sans KR', sans-serif;
 
   /* color */
-  --logo: #ec625b;
-  --button: #ec625b;
-  --body: #fffbf4;
-  --display: #5dcda4;
+  --logo: #BB8E7B;
+  --button: #BB8E7B;
+  --body: #F0F6F6;
+  --display: #594958;
   --display-border: #e8f5f9;
-  --print: #12787f;
-  --border: #12787f;
+  --border: #BB8E7B;
+  --black: #555;
+  --status: #C1E2D7;
+  --print: #94c2b2;
+  --time: #51b390;
 }
